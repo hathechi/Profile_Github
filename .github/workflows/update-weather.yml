@@ -14,8 +14,8 @@ jobs:
               with:
               city: HaNoi
               days: 7
-              weather-api-key: f5492d7dd42c4829be424812231409
-              template-file: 'README.md'
+              weather-api-key: ${{ secrets.WEATHER_API_KEY }}
+              template-file: 'README.md.template'
               out-file: 'README.md'
             - name: Commit
               run: |
